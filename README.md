@@ -48,3 +48,7 @@ The circuit involves connecting the ESP8266 with the following components:
 - Smart home automation.
 - Real-time environmental monitoring.
 - Gas leak detection for enhanced safety.
+
+## Circuit Diagram
+![image](https://github.com/user-attachments/assets/6cb77734-258a-4bad-8489-7de3d3391bb5)
+

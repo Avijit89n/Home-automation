@@ -1,54 +1,42 @@
-# IoT Home Automation Project
+# 🏠 Home Automation System with ESP32   
 
-## Project Overview
-This project focuses on building an IoT-based home automation system using the ESP8266 microcontroller. The system integrates sensors and actuators to automate home appliances, monitor environmental conditions, and enhance safety. The Blynk platform is utilized for seamless remote control and monitoring.
+## 📌 Project Overview  
+This **smart home automation system** is designed for the **ECE department project lab**, featuring:  
+✅ **ESP32-based automation** with real-time control  
+✅ **Google Cloud integration** using **Arduino IDE Smart Variables**  
+✅ **2-Way Switch System** (*Works only in online mode*) – Control via both **web dashboard** & **manual switch**  
+✅ **Dynamic WiFi credential management** using **WiFiManager**  
+✅ **Online operation mode required for switch control**  
 
-## Components Used
-1. **ESP8266**: The core microcontroller for Wi-Fi connectivity and control.
-2. **Relay Module**: To control appliances like lights, fans, and other devices.
-3. **DHT11 Sensor**: For temperature and humidity monitoring.
-4. **MQ2 Sensor**: For detecting gas leaks.
-5. **Blynk Platform**: For creating a user-friendly mobile app interface.
+## 🔧 Hardware Components  
+- **ESP32** – Main controller for automation  
+- **Relay Modules** – Controls electrical appliances  
+- **Manual Switches** – Works only when the system is online  
+- **Power Supply** – Suitable adapter for ESP32 & relays  
 
-## Features
-- **Appliance Control**: Remotely control lights, fans, and other appliances via the Blynk app.
-- **Environmental Monitoring**: Real-time display of temperature and humidity using the DHT11 sensor.
-- **Safety Alerts**: Gas leak detection using the MQ2 sensor, with alerts sent to the user's smartphone.
-- **Real-Time Data**: Data visualization on the Blynk dashboard for better insights.
+## 🌐 Software & Cloud Services  
+- **Arduino IDE** – For firmware development  
+- **Google Cloud** – Used for **smart variable management**  
+- **Arduino IoT Web Platform** – Real-time switch status monitoring  
+- **WiFiManager** – Enables dynamic WiFi credential updates  
 
-## Circuit Diagram
-The circuit involves connecting the ESP8266 with the following components:
-- Relay module connected to GPIO pins to control appliances.
-- DHT11 sensor connected to a digital pin for environmental data.
-- MQ2 sensor connected to an analog or digital pin for gas detection.
+## 🎮 Features & Working  
+1️⃣ **ESP32 controls appliances** via relay modules.  
+2️⃣ **Real-time switch status** is updated on the **Arduino IoT Web platform**.  
+3️⃣ **Google Cloud Smart Variables** ensure secure and scalable cloud integration.  
+4️⃣ **Users can control appliances via:**  
+   - **Web dashboard** (Online mode)  
+   - **Manual switches** (*Only in online mode*)  
+5️⃣ **2-Way Switch System (Online Mode Only):**  
+   - If the system is online, users can control appliances using both the **web dashboard** and **manual switch**.  
+   - The **web dashboard updates switch states** even when the manual switch is used.  
+6️⃣ **WiFiManager Web Portal** allows users to **update WiFi credentials** easily.  
 
-## Software Requirements
-1. **Arduino IDE**: For programming the ESP8266.
-2. **Blynk Library**: For integrating with the Blynk platform.
-3. **Wi-Fi Network**: For ESP8266 connectivity.
+---
 
-## Steps to Implement
-1. **Hardware Setup**:
-   - Connect the relay module, DHT11 sensor, and MQ2 sensor to the ESP8266 as per the circuit diagram.
-2. **Blynk Configuration**:
-   - Create a new project in the Blynk app and note the authentication token.
-   - Add widgets for buttons, gauges, and notifications as needed.
-3. **Programming the ESP8266**:
-   - Install the required libraries in the Arduino IDE (ESP8266, Blynk, DHT, etc.).
-   - Write the code to:
-     - Connect to Wi-Fi.
-     - Read data from sensors.
-     - Control the relay module.
-     - Send data to the Blynk app.
-4. **Upload and Test**:
-   - Upload the code to the ESP8266.
-   - Test the system for appliance control, environmental monitoring, and safety alerts.
+## 📜 License  
+This project is licensed under the **MIT License**.  
+See the [LICENSE](./LICENSE) file for details.  
 
-## Applications
-- Smart home automation.
-- Real-time environmental monitoring.
-- Gas leak detection for enhanced safety.
-
-## Circuit Diagram
-![image](https://github.com/user-attachments/assets/6cb77734-258a-4bad-8489-7de3d3391bb5)
-
+🔧 **Developed by:** Avijit Biswas  
+📅 **Last Updated:** 2025-03-21  

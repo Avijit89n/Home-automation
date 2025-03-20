@@ -16,7 +16,7 @@ This **smart home automation system** is designed for the **ECE department proje
 
 ## 🌐 Software & Cloud Services  
 - **Arduino IDE** – For firmware development  
-- **Google Cloud** – Used for **smart variable management**  
+- **Google Home** – Used for **google home integration**  
 - **Arduino IoT Web Platform** – Real-time switch status monitoring  
 - **WiFiManager** – Enables dynamic WiFi credential updates  
 
